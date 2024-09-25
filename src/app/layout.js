@@ -1,4 +1,5 @@
 // components
+import { Providers } from "@/components/layout/providers";
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
 
@@ -20,18 +21,20 @@ const font = Playfair_Display({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           "antialiased grid min-h-screen grid-rows-1",
           font.className
         )}
       >
-        <Navbar />
-        <main className="pt-16">
-          {children}
-          <Footer />
-        </main>
+        <Providers>
+          <Navbar />
+          <main className="pt-16">
+            {children}
+            <Footer />
+          </main>
+        </Providers>
       </body>
     </html>
   );

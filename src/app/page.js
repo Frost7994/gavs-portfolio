@@ -10,7 +10,7 @@ import ElopementPackages from "@/sections/elopementPackages";
 
 export default function Home() {
   return (
-    <div className="bg-red-200 h-full">
+    <div className="h-full">
       <HeroSection />
       <FeatureSection />
       <WeddingTestimonials />
