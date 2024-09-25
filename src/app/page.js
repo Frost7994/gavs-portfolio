@@ -1,7 +1,24 @@
+// sections
+import HeroSection from "@/sections/heroSection";
+import FeatureSection from "@/sections/featureSection";
+import WeddingTestimonials from "@/sections/weddingTestimonials";
+import WeddingPackages from "@/sections/weddingPackages";
+import ElopementFeatures from "@/sections/elopementFeatures";
+import ElopementTestimonials from "@/sections/elopementTestimonials";
+import MapFeature from "@/sections/mapFeature";
+import ElopementPackages from "@/sections/elopementPackages";
+
 export default function Home() {
   return (
     <div className="bg-red-200 h-full">
-      <p>Hello world</p>
+      <HeroSection />
+      <FeatureSection />
+      <WeddingTestimonials />
+      <WeddingPackages />
+      <ElopementFeatures />
+      <ElopementTestimonials />
+      <MapFeature />
+      <ElopementPackages />
     </div>
   );
 }
